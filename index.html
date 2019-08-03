@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			// 对象的基本形式
+			// var deng = {
+			// 	prepareWife : "xiaowang",
+			// 	name : "laodeng",
+			// 	sex : "male",
+			// 	gf : "xiaoliu",
+			// 	Wife : "",
+			// 	divorce : function () {
+			// 		delete this.Wife;
+			// 		this.gf = this.prepareWife;
+			// 	},
+			// 	getMarried : function () {
+			// 		this.Wife = this.gf;
+			// 	},
+			// 	changePrepareWife : function (someone) {
+			// 		this.prepareWife = someone;
+			// 	}
+			// }
+			
+			
+			// 对象创建方法  
+			// 1.var obj = {} plainObject 对象字面量/对象直接量
+			// 2.构造函数
+			//   1)系统自带的构造函数  new Object()
+			//   2)自定义
+			// 大驼峰式命名规则
+			
+			
+			// function Car () {
+			// 	this.name = "BWM";
+			// 	this.height = "1400";
+			// 	this.lang = "4900";
+			// 	this.weight = "1000";
+			// 	this.health = "100";
+			// 	this.run = function () {
+			// 		this.health --;
+			// 	}
+			// }
+			// 
+			// var car = new Car();
+			// var car1 = new Car(); 
+			
+			// function Student(name, sex, age,) {
+			// 	this.name = name;
+			// 	this.sex = sex;
+			// 	this.age = age;
+			// 	this.grade = "2019";
+			// 	
+			// }
+			// var student = new Student('a' , 'b', '18');
+			
+			function Person(name, height) {
+				this.name = name;
+				this.height = height;
+				
+			}
+			
+			console.log(new Person('zhangsan', 180).name);
+		</script>
+	</body>
+</html>
