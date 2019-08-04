@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// var str = 'abcd';
+			// str.length = 2;
+			// //new str('abcd').length = 2;delte
+			// console.log(str);
+			
+			// var str = 'abc';
+			// str += 1; 
+			// var test = typeof(str);//test = "string"
+			// if(test.length == 6) {
+			// 	test.sign = "typeof返回的值就可能为string"
+			// }
+			// console.log(str.sign);
+			
+			var str = "gyusdvbhvcusd"
+			
+			function byteslength(str) {
+				var count = 0;
+				for(var i = 0; i < str.length; i ++) {
+					if(str.charCodeAt(i) > 255) {
+						count += 2;
+					}else{
+						count ++;
+					}
+				}
+				return count;
+			} 
+			
+		</script>
+	</body>
+</html>
