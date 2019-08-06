@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//call : 改变this指向
+			// call需要把实参按照形参的个数传进去
+			// apply需要传一个arguments
+			// function Person(name, age, sex) {
+			// 	this.name = name;
+			// 	this.age = age;
+			// 	this.sex = sex;
+			// }
+			// 
+			// function Student(name, age, sex, tel, grade) {
+			// 	// var this = {name = "", age = "", sex = ""}
+			// 	Person.call(this, name, age, sex,);
+			// 	this.tel = tel;
+			// 	this.grade = grade;
+			// }
+			// var student = new Student("sunny", 123, "male", 139, 2017);
+			// 
+			
+			// 2.继承模式，命名空间，对象枚举（上）
+			
+			// 第三中继承写法
+			// Father.prototype.lastName = "deng";
+			// function Father() {
+			// 	
+			// }
+			// function Son() {
+			// 	
+			// }
+			// Son.prototype = Father.prototype
+			// 
+			// var son = new Son();
+			// var father = new Father();
+			
+			// 第四种继承写法
+			// function inherit(Target, Origin) {
+			// 	function F() {};
+			// 	F.prototype = Origin.prototype;
+			// 	Target.prototype = new F();
+			// }
+			// Father.prototype.lastName = "deng";
+			// function Father() {
+			// 	
+			// }
+			// function Son() {
+			// 	
+			// }
+			// inherit(Son, Father);
+			// var son = new Son();
+			// var father = new Father();
+			
+		</script>
+	</body>
+</html>
