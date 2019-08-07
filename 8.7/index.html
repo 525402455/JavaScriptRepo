@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// function Deng(name, wife) {
+			// 	var prepareWife = 'xiaozhang';
+			// 	
+			// 	this.name = name;
+			// 	this.wife = wife;
+			// 	this.divorce = function () {
+			// 		this.wife = prepareWife;
+			// 	}
+			// 	this.chengePrepareWife = function (target) {
+			// 		prepareWife = target;
+			// 	}
+			// 	this.sayPrapreWife = function () {
+			// 		console.log(prepareWife);
+			// 		
+			// 	} 
+			// }
+			// var deng = new Deng("deng", "xiaoliu");
+			
+			//圣杯模式
+			// var inherit = (function () {
+			// var F = function () {};
+			// return function (Target, Origin) {
+			// 	F.prototype = Origin.prototype;
+			// 	Target.prototype = new F();
+			// 	Target.prototype.constructor = Target;
+			// 	Target.prototype.uber = Origin;
+			// }
+			// 	
+			// }())
+			
+			//闭包模式的避免污染全局变量
+			// var name = "bad";
+			// var init = (function () {
+			// 	var name = "abn";
+			// 	
+			// 	function callName(){
+			// 		console.log(name);
+			// 	}
+			// 	
+			// 	return function () {
+			// 		callName();
+			// 	}
+			// }())
+			// init();
+			
+		</script>
+	</body>
+</html>
