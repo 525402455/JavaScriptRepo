@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+		<div>
+			<span></span>
+			<strong></strong>
+			<i></i>
+			<form></form>
+		</div>
+		
+		<script type="text/javascript">
+			
+			var div = document.getElementsByTagName('div')[0];
+			
+			function retElementChild(node) {
+				
+				// no children
+				
+				var arr = [],
+				child = node.childNodes,
+				len = child.lenght;
+				
+				for(var i = 0; i < len; i++) {
+					
+					if(child[i].nodeType === 1) {
+						arr.push(child[i]);
+					}
+				}
+				
+				return arr;
+			}
+			
+			var a = retElementChild(div);
+			document.write(a);
+		</script>
+	</body>
+</html>
